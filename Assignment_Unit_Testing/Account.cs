@@ -8,14 +8,16 @@ namespace Assignment_Unit_Testing
 {
     public abstract class Account
     {
-        internal double _balance;
+		internal double _balance;
 
-        internal Account(double balance)
+		internal Account(double balance)
         {
             _balance = balance;
         }
 
-        abstract public void Deposit(double amount);
+		public double Balance { get => _balance;  }   //There. Now the assignment should be possible.
+
+		abstract public void Deposit(double amount);
         abstract public void Withdraw(double amount);
 
     }

@@ -19,7 +19,7 @@ namespace Assignment_Unit_Testing
         {
             if(amount >0)
             {
-                _balance += amount + _interest;
+                _balance += amount + _interest; //Should we really be adding interest when deposits are made? My bank account adds interest regularly. Doing it this way lets people use a high transaction frequency to make as much money as they want.
             }
         }
 
